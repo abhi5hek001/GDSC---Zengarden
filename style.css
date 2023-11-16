@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    line-height: 1.6;
+}
+
+/* Loader */
+.loader {
+    height: 2px;
+    width: 100vw;
+    background-color: red;
+    animation: load 1.5s forwards;
+}
+
+@keyframes load {
+    0% {
+        width: 0vw;
+    }
+
+    50% {
+        width: 65vw;
+    }
+
+    70% {
+        width: 87vw;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+
+/* Navigation Styling */
+.head-container {
+    font-family: 'Croissant One', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(158, 57, 241);
+    color: white;
+    padding: 15px;
+    font-size: x-large;
+    /* margin-bottom: 15px; */
+}
+
+.head-container h1:hover {
+    cursor: pointer;
+}
+
+.head-container a {
+    position: relative;
+    right: 3%;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 20px;
+}
+
+.head-container a:hover {
+    background-color: #47248a;
+    color: white;
+    border-radius: 25px;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    /* margin-bottom: 20px; */
+}
+
+
+
+
+/* About Section Styling */
+.about {
+    padding: 1% 22%;
+    background-color: rgb(214, 163, 255);
+}
+
+.about h1 {
+    font-family: Montserrat;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.about p {
+    font-family: Verdana;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about blockquote {
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Award Section Styling */
+.award {
+    padding: 1% 10%;
+    background-color: rgb(214, 163, 255);
+}
+
+.award h4 {
+    font-size: larger;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: bolder;
+}
+
+.award p {
+    text-align: center;
+}
+
+.award-container {
+    background-color: rgb(180, 102, 244); 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.award-plan {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.award-plan .apply-button {
+    margin-top: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.award-plan .apply-button:hover {
+    background-color: rgb(214, 163, 255);
+    color: black;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    background-color: rgb(180, 102, 244);
+    color: rgb(231, 204, 254);
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Event Styling */
+#event {
+    text-align: center;
+    font-family: Montserrat;
+    background-color: rgb(214, 163, 255);
+}
+
+/* Videos styling */
+#videos {
+    text-align: center;
+    background-color: rgb(214, 163, 255);
+}
+
+#videos h2{
+    text-align: center;
+}
+
+/* Form Styling */
+#form {
+    outline: 2px solid black;
+    text-align: left;
+    background-color: rgb(214, 163, 255);
+    padding: 2% 0 2% 5%;
+}
+
+/* Account-Details */
+#account_details {
+    text-align: center;
+    background-color: rgb(214, 163, 255);
+    padding: 2% 2%;
+}
+
+/* Images Styling */
+#images {
+    background-color: rgb(214, 163, 255);
+    text-align: center;
+    display: grid;
+    
+}
+
+#images .image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#images .image-container img {
+    position: inherit;
+    height: 50%;
+    width: 50%;
+    overflow: hidden;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
